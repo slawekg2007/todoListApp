@@ -1,0 +1,25 @@
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.DatePicker?>
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.slawekg2007.todolist.DialogController" >
+<headerText>
+Łabidudaj daj, łabidudaj
+
+</headerText>
+    <content>
+        <GridPane hgap="10" vgap="10">
+
+            <Label text="Short description: "/>
+            <TextField fx:id="shortDescriptionField" GridPane.columnIndex="1"/>
+            <Label text="Details: " GridPane.rowIndex="1"/>
+            <TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1" wrapText="true"/>
+            <Label text="DeadLine: " GridPane.rowIndex="2" />
+            <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+
+</DialogPane>
